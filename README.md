@@ -4,7 +4,7 @@ Program that calculates scores for potential recombinant signal sequences given 
 
 USAGE
 ===
-> perl RIC.pl <sequence file>
+>perl RIC.pl intput.fa
 
 Dependencies
 ===
