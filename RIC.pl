@@ -33,7 +33,7 @@ $outfile = basename($searchfile,@exts).".12RSS.scores";
 $numseqs = 0;
 &GETSEQS("MM12RSS.fasta");
 &INITMODEL;
-&RICSCORE;
+&RICSCORE(-45);
 
 #Calculate Scores for 23RSS
 $outfile = basename($searchfile,@exts).".23RSS.scores";
@@ -41,7 +41,7 @@ $outfile = basename($searchfile,@exts).".23RSS.scores";
 $numseqs = 0;
 &GETSEQS("MM23RSS.fasta");
 &INITMODEL;
-&RICSCORE;
+&RICSCORE(-65);
 
 
 #________end of program________
@@ -82,7 +82,7 @@ sub GETMODEL{
 	    $tempsum += $_;
 	}
     }
-    #if($tempsum == 780){
+
     if(basename($modelfile,".model") eq "MM12"){
 	$rstype = 12;
 	$collength = 28;
@@ -91,10 +91,6 @@ sub GETMODEL{
 	$collength = 39;
     }
     
-    #foreach(@model){
-    	#print "$_\n";
-    #}
-    #initialize the column count array
     for($i=0;$i<$collength;$i++){
 	$colcounts[$i] = 0;
     }
@@ -146,7 +142,6 @@ sub INITMODEL{
 	    }
 	    $comb = $position.$comb;
 	    if($comb =~ /n|\./){
-		#print "$s\n";
 		$colcounts[$position-1] -= 1;
 	    }
 	    if(exists $scores{$comb}){
@@ -157,9 +152,6 @@ sub INITMODEL{
 	}
     }
     print "Initialization complete.\n";
-    #while(($key,$value) = each %scores){
-	#print "$key => $value\n";
-    #}
 }
 
 sub RICSCORE{
@@ -185,94 +177,96 @@ sub RICSCORE{
     (my $lcount);
     (my $tempin);
     (my $fastaheader);
-    
-    if($rstype == 12){
-	$searchspace = 28;
-    } else {
-	$searchspace = 39;
-    }
-    for($counter=0;$counter<$searchspace;$counter++){
-	$colcounts[$counter] += $numseqs;
-    }
-    print "Computing RIC scores for $searchfile.\nSaving to $outfile. . .\n";
     $a = 2;
-    open(FOUT,">$outfile");
-    open I, "<$searchfile";
 
-    while($tempin = <I>){
-	if (-e "$outfile.temp.txt"){
-		unlink("$outfile.temp.txt");
+    if($rstype == 12){
+		$searchspace = 28;
+    	} else {
+		$searchspace = 39;
+    }
+    
+    for($counter=0;$counter<$searchspace;$counter++){
+		$colcounts[$counter] += $numseqs;
+    }
+    
+    print "Computing RIC scores for $searchfile.\nSaving to $outfile. . .\n";
+    
+    open(FOUT,">$outfile");
+    open(ISEQ, "<$searchfile");
+
+    while($tempin = <ISEQ>){
+		if (-e "$outfile.temp.txt"){
+			unlink("$outfile.temp.txt");
 		}
-	open O, ">$outfile.temp.txt";
-	$fastaheader = $tempin;
-	$fastaheader =~ s/\n//g;
-	$fastaheader =~ s/\r//g;
+		open O, ">$outfile.temp.txt";
+		$fastaheader = $tempin;
+		$fastaheader =~ s/\n//g;
+		$fastaheader =~ s/\r//g;
         unless($tempin =~ /^>/){
-		print "Invalid input file. Input must be in FASTA format.\n";
-		exit;
+			print "Invalid input file. Input must be in FASTA format.\n";
+			exit;
 		}
-	local *I = shift;
-	$tempin = <I>;
-	print O "$tempin";
-	close (O);
+		$tempin = <ISEQ>;
+		print O "$tempin";
+		close (O);
         
-	open(FIN,"<$outfile.temp.txt")
+		open(FIN,"<$outfile.temp.txt")
 		or die "Cannot open searchfile temp.txt.\n";
     	$fileempty = 0;
-	#print "$fastaheader";
-	$phony = 0 ;
-	$tempin = <FIN>;
-	$tempin =~ s/\n//g;
-	$tempin =~ s/\r//g;
-	$tempin =~ tr/[A-Z]/[a-z]/;
-	@ricseq = split(//,$tempin);
+		$phony = 0 ;
+		$tempin = <FIN>;
+		$tempin =~ s/\n//g;
+		$tempin =~ s/\r//g;
+		$tempin =~ tr/[A-Z]/[a-z]/;
+		@ricseq = split(//,$tempin);
 
-	while($fileempty==0){
-		$totalprod = 0;
-		if(scalar(@ricseq) < $searchspace){last;}
-		$phony += 1;
-		$conserved = $ricseq[0].$ricseq[1];
-		if($conserved eq "ca"){
-		    foreach $m (@model){
-			$lookup = "";
-			@positions = split(/,/,$m);
-			@positions = sort {$x<=>$y}@positions;
-			$class = scalar(@positions);
-			foreach $pos (@positions){
-			    $curr = $ricseq[$pos-1];
-			    $lookup .= $curr;
-			    $lastpos = $pos;
-			}
-			$lookup = $lastpos.$lookup;
-			if(exists $scores{$lookup}){
-			    $q = $scores{$lookup};
-			} else {
-			    $q = 0;
-			}
-			#$prob = ($q + 1)/($colcounts[$lastpos-1] + ($a*(4**$class)));
-			$prob = ($q + ($a/(4**$class)))/($colcounts[$lastpos-1] + $a);
-			$prob = log($prob);
-			#print "$q";
-			$totalprod = $totalprod + $prob;
-		    }
-		    
-		    $end = $phony+$searchspace-1;
-		    print FOUT "$fastaheader\t";
-		    print FOUT "$phony\t$end\t";
-		    for($counter=0;$counter<$searchspace;$counter++){
-			print FOUT $ricseq[$counter];
-		    }
-		    print FOUT "\t$totalprod";
-		    print FOUT "\n";
-		}
-		
-		shift(@ricseq);
+		while($fileempty==0){
+			$totalprod = 0;
+			if(scalar(@ricseq) < $searchspace){last;}
+			$phony += 1;
+			$conserved = $ricseq[0].$ricseq[1];
+			if($conserved eq "ca"){
+			   
+			    foreach $m (@model){
+					$lookup = "";
+					@positions = split(/,/,$m);
+					@positions = sort {$x<=>$y}@positions;
+					$class = scalar(@positions);
+					foreach $pos (@positions){
+					    $curr = $ricseq[$pos-1];
+					    $lookup .= $curr;
+					    $lastpos = $pos;
+					}
+					$lookup = $lastpos.$lookup;
+					if(exists $scores{$lookup}){
+					    $q = $scores{$lookup};
+					} else {
+						$q = 0;
+					}
+					$prob = ($q + ($a/(4**$class)))/($colcounts[$lastpos-1] + $a);
+					$prob = log($prob);
+					$totalprod = $totalprod + $prob;
+			    }
+			    
+			    $end = $phony+$searchspace-1;
 
-	    }#end of while($fileempty==0)
+			    if($totalprod >= $_[0]){
+				    print FOUT "$fastaheader\t";
+				    print FOUT "$phony\t$end\t";
+				    for($counter=0;$counter<$searchspace;$counter++){
+						print FOUT $ricseq[$counter];
+				    }
+				    print FOUT "\t$totalprod";
+				    print FOUT "\n";
+			    }
+
+			}
+			shift(@ricseq);
+		}#end of while($fileempty==0)
 	    
-            if (-e "$outfile.temp.txt"){
-               unlink("$outfile.temp.txt");
-            }
+        if (-e "$outfile.temp.txt"){
+           unlink("$outfile.temp.txt");
+        }
 	
 	}#end of while(loopthroughtempseq)
     close(I);
