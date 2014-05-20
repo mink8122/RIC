@@ -1,0 +1,310 @@
+>TCRVB1*1
+cacagtg gtaaactctgcaggcgcattgaa acaaaaacc
+>TCRVB2
+cacagcc ctgcagagctcttgcctccctgt acacaaacc
+>TCRVB3*1
+cacagcc ttgaaaaaacaccgtcttcctgt acacaaact
+>TCRVB4*1
+cacagtt gtgcagagtcactgtttccctgt gcacaaacc
+>TCRVB5*1
+cacagcc ctgcagactcattagatctctgt acacaaacc
+>TCRVB12-1*1  M15614 (TCRBV5S2 AE000663)
+cacagcc ttacaaagctactggctttctgt aacttaatc
+>TCRVB12-2*1  M15613 (TCRBV5S1 AE000663)
+cacagcc ttacagagctactggctttctgt aacttaatc
+>TCRVB13-1*2
+cacagtg atgtgtggcttcctcccctttgc acagaaagt
+>TCRVB13-2*1 M15617 (TCRBV8S2 AE000663)
+cacagtg atgtggggtttcctcccctctgc acagaaagg
+>TCRVB13-3 AE000664
+cacagtg atgtgtggcttccttcactctgc acagaaagg
+>TCRVB14
+cacagta actcagagacacatccctgctgt gcacaaagc
+>TCRVB15
+cacagag ctatacaaggatgccctgcctgt gcaaaaaca
+>TCRVB16*1
+cacagag ctacagaatcatagtctgctgag gcagaaacc
+>TCRVB17
+cacaggg ctacaatatcacctaccctctgt tcataaact 
+>TCRVB19*1
+cacagtg gagcacagctaccccctctccat gcataaatg
+>TCRVB20*1
+cacagtg ctggacaagaacaacacacttca gcaagaacc
+>TCRVB23
+cacagcg ctgaagtgtgcactccccctgc. acacaaact 
+>TCRVB26*1Me
+cacagca ttgaaatgtgcattctctccagt gcataaacc
+>TCRVB29*1
+cacagct ctacacagccacatcctttctac acaaaaata
+>TCRVB30c
+cacagtg ctggttca.agggagaaatctca gcgagaact
+>TCRVB31*1
+cacactg agtagggtggggcagacatctgt gcaaaaacc
+>TCRDB1-23RSS
+cacggtg attcaattctatgggaagccttt acaaaaacc
+>TCRDB2-23RSS
+cacaatg attcaactggaagaggtgctttt acaaaaagc
+>TRGV1*1
+cacaaca ttagagcctctagactagcctgc ataagaacc
+>TRGV1*2
+cacaaca ttagagcctctagactagcctgc ataagaacc
+>TRGV1*3
+cacatca tgggtcaagatatttgccaaagg gacaaagct
+>TRGV2*1
+cacaaca ttagagcctctagactagcctgc ataagaacc
+>TRGV3*1
+cacaaca ttagagcctctagactaacctgc ataagaacc
+>TRGV4*1
+cacagca tctgagcttccagaatagcctct acaagaacc
+>TRGV5
+cacagtg tctcagcatctggaggaacctgt aagaaaacc
+>TRGV6*1
+cactcta tcaagatactgcactgttaacaa acaaaaacc
+>TRGV6*2
+cactcta tcaagatactgcactgttaacaa acaaaaacc
+>TRGV7*1
+cacaatg actcagccctgcc.ctcatctgt actgaaaga
+>TRGV7*2
+cacaatg actcagccctgcc.ctcatctgt actgaaaga
+>IGKJ1*1
+cacagtg gtagtactccactgtctggctgt acaaaaacc
+>IGKJ2*1
+cacactg gtgtcccttcactcaacccccat acaaaaact
+>IGKJ2*2
+cacactg gtgtcccttcactcaacccccat acaaaaact
+>IGKJ2*3
+cacactg gtgtcccttcactcaacccccat acaaaaact
+>IGKJ4*1
+cacagtg attcatatcactgcgcccccctt tacaaaaac
+>IGKJ4*2
+cacagtg attcatgtcactgtgcccccctt tacaaaaac
+>IGKJ5*1
+cacagtg aggactatgacatgcccctctct acaaaaacc
+>TRDD1|23
+cacaggt tgaagtatattaaacctctgttc agaaacact
+>TRDD2|23
+cacagtg ttgcaaaccccatagggacctgt acaaaaact
+>IGHJ1*1
+cacagtc tctgttctgcctctgttcctata ctaaaactc
+>IGHJ1*2
+cacagtc tctgttctgcctctgttcctata ctaaaactc
+>IGHJ2*1
+cacacta tcatagacccctttagtgggtgt acaaaaacc
+>IGHJ3*1
+cacattg tgacaacaatgattagacctctg acaataaat
+>IGHJ4*1
+cacaata gtgggtttttcctctgtacccga caaaaaccc
+>TCRDV1
+cacggtg ctacagttccgcttctgatccct tcaagaaag
+>TCRDV2
+cacagtg gtctacagtcagccacaggctgt ctccaaacc
+>TCRDV3
+cacactg tgacagacagggctgcacctgta caaaatctg
+>TCRDV4*1
+cacggtg acacaggcaacagagagggtcta acagaaacc
+>TCRDV5*1
+cactgtg gtgcaggtgcccagggagcctgt acccaaacc
+>TCRDV5*2
+cactgtg gtgcaggtgcccagggagcctgt acccaaacc
+>TCRDV5*3|ggtttgggtacaggctccctgggcacctgcaccacagtg
+cactgtg gtgcaggtgcccagggagcctgt acccaaacc
+>TCRDV6-2*1
+cacggtg tttgaagtgatagcacaagctga acaaaaact
+>TCRDV6-3*1
+cacggtg tttgaagtgatagcacaagctga acaaaaact
+>TCRDV6-4*1
+cacagtg tttgaagtgacagcacaagctga acaaaaact
+>TCRDV6-4*5
+cacagtg tttgaagtgacagcacaagctga acaaaaact
+>IGLV1*1
+cacaatg acatgtgtagatggggaagtaga acaagaaca
+>IGLV1*2
+cacaatg acatgtgtagatggggaagtaga acaagaaca
+>IGLV2*1
+cacaatg acatgtgtagatggggaagtaga acaagaaca
+>IGLV2*2
+cacaatg acatgtgtagatggggaagtaga acaagaaca
+>IGLV3
+cacagta acggagataaaggaggaagcagg acagaaact
+>TRADV11S5
+cacagtg ctcccagcaaggctggagcctgg ccccaaact
+>TRADV7S2
+cacagtg tttgaagtgacagcacaagctga acaaaaact
+>TRAV10S6
+cacagtg ctccccacacacctgcagcctgt acacaaacc
+>TRAV10S8
+cacagtg ctccacacacacctgcagcccgc acacatacc
+>TRAV12S1
+cacagtg agacagctggctctgcagctgtg cagtatcct
+>TRAV13S1
+cacactg ctccacgggcacctgcagtctgt cctcaaacc
+>TRAV14S2
+caccatg ctccccagaaacttacagccagt accaaaacc
+>TRAV15S1
+cacactg tttcctaggcacctgcagcctat cctcaaact
+>TRAV17S3
+cacagtg gcagaagtatctacaagagcccc acaaaaacc
+>TRAV18S2
+cacagtg tgtggcgggcacctgcagccctg acacaaaac
+>TRAV1S1
+cacagtg cttcccagacacctgcagcctgt atgcaaacc
+>TRAV1S3
+cacagtg tcccagacacctgcagcctgta. tgtaaacct
+>TRAV1S4
+cacagtg ctctccaggcacctgcgggctgc acccaaacc
+>TRAV1S8
+cacagtg ctctccaggcacctgcaggctgc acccaaacc
+>TRAV20S1
+cacggta ctctgtgcatgcctgcagcctct acccaaact
+>TRAV2S1
+cacagtg ctctctaggcacctgcagcccat acccaaacc
+>TRAV2S3
+cacagtg ctctccaggcacctgcagcccat acccaaacc
+>TRAV2S4
+cacagtg ctctccaggcacctgtagcccat acccaaacc
+>TRAV2S5
+cacagtg ctctccaggcacctgcagcccat acccaaacc
+>TRAV2S6
+cacagtg ctctccaggcacctgcagcccat acccaaacc
+>TRAV2S7
+cacagtg ctctccaggcacctgcagcccat acccaaacc
+>TRAV2S9
+cacagtg ctctctaggcacctgcagcccat acccaaacc
+>TRAV3S1
+cacagtg tgtggggctgcagggggagctga acacaaaca
+>TRAV3S5
+cacagtg tgtggggctgcagggggagccga acaaaaaca
+>TRAV3S6
+cacagtg tgtggggctgcagggggagctga acacaaaca
+>TRAV3S8
+cacagtg tgtggggctgcagggggagctga acacaaacc
+>TRAV4S10
+cacagtg gcagaaactgcagggggagctga gcacaaacc
+>TRAV4S12
+cacagtg gcagaaactgcaggggcagctga gcataaagt
+>TRAV4S2
+cacagtg gcagaaaccacaaggggagctga gcacaaact
+>TRAV4S4
+cacagtg gcagaaactgcagggggagctga gcacaaacc
+>TRAV5S2
+cacagtg ctccccaggcacctgcagcctgc acataaacc
+>TRAV8S11
+cacagtg agggagactgcaggggaagctgc acatgaacc
+>TRAV8S12
+cacagtg agggagactgcaggggaagctgc acatgaacc
+>TRAV8S13
+cacagtg agggagactgcaggggaagctgc acatgaacc
+>TRAV8S2
+cacagtg agggagactgcaggggaagctgc acatgaacc
+>TRAV8S3
+cacagtg agggagactgcaggggaagctg. cacatgaac
+>TRAV8S5
+cacagtg agggagactgcaggggaagctg. cacatgaac
+>TRAV8S6
+cacagtg agggagactgcaggggaagctg. cacatgaac
+>TRAV8S7
+cacagtg agggagactgcaggggaagctg. cacatgaac
+>TRAV8S8
+cacagtg agggagactgcaggggaagctg. cacatgaac
+>J00530_IGHV1S1
+cacagtg ttgcaaccacatcctgagagtgt cagaaaacc
+>J00532_IGHV1S2
+cacagtg ttgcaaccacatcctgagagtgt cagaaaacc
+>J00533_IGHV1S3
+cacagtg ttgcaaccacatcctgagagtgt cagaaaccc
+>J00534_IGHV1S4
+cacagtg ttgcaaccacatcctgagagtgt cagaaaacc
+>J00535_IGHV1S5
+cacagtg ttgcaaccacatcctgagagtgt cagaaaacc
+>J00536_IGHV1S6
+cacagcg ttgtaaccacatcctgagagtgt cagaaaccc
+>J00537_IGHV1S7
+cacagtg ttgtaaccacatcctgagagtgt cagaaaccc
+>J00488_IGHV1S8
+cacagtg ttacaaacacatcctgagtgtgt cagaaaccc
+>J00511_IGHV1S9
+cacagcg ttgtaaccacaggctgagtgtgt cagaaaact
+>J00503_IGHV1S10
+cacagtg ttgtaaccacatcctgagtgtgt cagaaaccc
+>J00507_IGHV1S12
+cacagtg ttgtaaccacatcctgagtgtgt cagaaaccc
+>K02153_IGHV1S18
+cacagtg ttttaaccacatcctgagtgtgt acagaaacc
+>K00706_IGHV1S20|X00160
+cacagtg ttgtaaccacattctgagagtgt tagaaaccc
+>X02458_IGHV1S22
+cacagtg gtgcaaccacatcccgactgtgt cacaaaccc
+>X02459_IGHV1S23
+cacagtg gtgcaaccacatcccgactgtgt cagaaaccc
+>X02460_IGHV1S24|pseudogene
+cacagtg ttgcaaccacatcctgagtgtgt cagaaaccc
+>X02462_IGHV1S26|pseudogene
+cacagtg ttgtaaccacagcctgagtgtgt cagaaaact
+>X02466_IGHV1S30
+cacagtg ttgtaaccacatcctgagtgtgt cagaaatcc
+>X02467_IGHV1S31
+cacagtg ttgcaaccacatcctgagtgtgt cagaaatcc
+>X06867_IGHV1S35|pseudogene
+cacagtg ttgtaaccacatcctgagtgtgt cagaaaccc
+>X06864_IGHV1S36|pseudogene
+cacagtg ttgtaaccacatcctgagtgtgt cagaaaccc
+>X06866_IGHV1S37
+cacagtg ttctaaccacatcctgagtgtgt cagaaaccc
+>X06868_IGHV1S38
+cacagtg ttgtaaccacatcctgagtgtgt cagaaatct
+>M19403_IGHV1S43
+cacagct gctacagccacttcctgagtgtg tcagaaaac
+>D13201_IGHV1S57
+cacagtg ttgtaaccacagcctgagtgtgt cagaaaact
+>L14547_IGHV1S59
+cacagtg ttgtaaccacatcctgagtgtgt cagaaatcc
+>L14548_IGHV1S60
+cacagtg ttgtaaccacatcctgagtgtgt cagaaatcc
+>D14633_IGHV1S126
+cacagtg ttgcaaccacatcctgagtgtgt cagaaaccc
+>D14634_IGHV1S127
+cacagtg tttcaa.ccactcctgagagtgt cagaaaccc
+>J00492_IGHV2S1|V00767
+cacagtg agggaagtccaa.tgtgagcctg cacaaatac
+>M36690_IGHV2S2
+cacagtg agggaagtccattgtgaacttga acaaaaatt
+>J00502_IGHV2S3
+cacagtg agggaagtccattgtgaacttga acaaaaatt
+>M27021_IGHV2S4
+cacagtg agggaagtccagtgtgagcctgc acaaatact
+>D13203_IGHV3S6
+cacagtg tggagtcttcagtgtgagcccag acataaacc
+>V00774_IGHV4S1
+cacagtg aggaaatctcagtttgtacccag acatgaacc
+>X00163_IGHV5S1
+cacagtg agtgaatgttactgtgagctcaa actaaaacc
+>K02890_IGHV5S2|X01113
+cacaatg agcaaaagttactgtgagctcaa actaaaacc
+>X59817_IGHV5S6
+cacaatg aggaaatgttactgtgagctcaa actaaaacc
+>J00538_IGHV7S1
+cacagtg agaggacgtcattgtgagcccag acacaaacc
+>J00526_IGHV7S2
+cacagtg agggtacttcagtgtgagcctag acacaaacc
+>J00525_IGHV7S4
+cacagtg agggtacttcagtgtgagcctag acacaaacc
+>M12816_IGHV7S6|X03253
+cacagtg agaggacgtcattgtgagcccag acacaaacc
+>X03254_IGHV7S7|***
+cacagtg agggtgtgagccttgaaacaaac ctcattgca
+>X03255_IGHV7S8
+cacagtg agggtacttcagtgtgagcctag aaaaaaacc
+>X03256_IGHV7S9
+cacagtg agggtacttcagtgtgagcctag acacaaacc
+>M16724_IGHV7S10|***
+cacagtg agggtgtgagccttgaaacaaac ctcactgca
+>M16725_IGHV7S11
+cacagtg agggtacttcagtgtgagcctag acacaaacc
+>M16726_IGHV7S12
+cacagtg agggtacttcagtgtgagcctag acacaaacc
+>X03571_IGHV14S1
+cacagtg ttgcaaccacatcctgagcgtgt cagaaacca
+>X03572_IGHV14S2
+cacagtg ttgcaaccacatcctgagtgtgt cagaaacca
+>X03573_IGHV14S3
+cacagtg ttgcaaccacatcctgagagtgt cagaaacca
