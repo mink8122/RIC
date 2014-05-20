@@ -1,6 +1,6 @@
 RIC
 ===
-Program that calculates scores for potential recombinant signal sequences given a fasta input.
+Program that calculates scores for potential recombinant signal sequences given a fasta input file.
 
 USAGE
 ===
